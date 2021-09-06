@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/normalaiz.css" />
+    <link rel="stylesheet" href="css/cost.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>slider</title>
+  </head>
+  <body>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="img/TB-imgbg-1.jpg" media="(max-width: 768px)" />
+            <source srcset="img/PL-imgbg-1.jpg" media="(max-width: 1024px)" />
+            <source srcset="img/SM-imgbg-1.jpg" media="(max-width: 320px)" />
+            <img src="img/DS-imgbg-1.jpg" alt="slide1" />
+          </picture>
+          <div class="slider-discr">
+            <h1 class="slider-title">Прикоснитесь к прекрасному</h1>
+            <p class="slider-subdiscr">
+              Мы вынуждены отталкиваться от того, что реализация намеченных
+              плановых заданий создаёт предпосылки для новых предложений.
+            </p>
+            <a href="#" class="slide-link">Подписаться на рассылку</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="img/TB-imgbg-2.jpg" media="(max-width: 768px)" />
+            <source srcset="img/PL-imgbg-2.jpg" media="(max-width: 1024px)" />
+            <source srcset="img/SM-imgbg-2.jpg" media="(max-width: 320px)" />
+            <img src="img/DS-imgbg-2.jpg" alt="slide1" />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="img/TB-imgbg-3.jpg" media="(max-width: 768px)" />
+            <source srcset="img/PL-imgbg-3.jpg" media="(max-width: 1024px)" />
+            <source srcset="img/SM-imgbg-3.jpg" media="(max-width: 320px)" />
+            <img src="img/DS-imgbg-3.jpg" alt="slide1" />
+          </picture>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
