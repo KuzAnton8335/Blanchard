@@ -31,30 +31,33 @@ dd {
 
 /* Выставляем основные настройки по-умолчанию для body */
 body {
-	min-height: 100vh;
-	scroll-behavior: smooth;
-	text-rendering: optimizeSpeed;
-	font-family: 'Open Sans', sans-serif;
- }
- 
- /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
- ul[class],
- ol[class] {
-	list-style: none;
- }
- 
- /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
- a:not([class]) {
-	text-decoration-skip-ink: auto;
- }
- 
- /* Упрощаем работу с изображениями */
- img {
-	max-width: 100%;
-	display: block;
- }
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-family: "Open Sans", sans-serif;
+}
 
- /* Наследуем шрифты для инпутов и кнопок */
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
 input,
 button,
 textarea,
@@ -62,8 +65,14 @@ select {
   font: inherit;
 }
 
+:root {
+  --black-color: #000;
+  --white-color: #fff;
+  --hover-color: #7943a4;
+  --focus-color: #c283f3;
+}
 /* container */
-.container{
-	max-width: 1600px;
-	margin: 0 auto;
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
 }
