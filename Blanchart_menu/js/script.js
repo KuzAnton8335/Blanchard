@@ -1,9 +1,9 @@
 // скрипт мобильного меню
 
 let navSlide = () => {
-	let burger = document.querySelector(".burger-menu");
-	let navMenu = document.querySelector(".header-nav__list");
-	let navlinks = document.querySelectorAll(".header-nav__list li");
+	const burger = document.querySelector(".burger-menu");
+	const navMenu = document.querySelector(".header-nav__list");
+	const navlinks = document.querySelectorAll(".header-nav__list li");
 
 	burger.addEventListener("click", () => {
 		navMenu.classList.toggle("actione");
