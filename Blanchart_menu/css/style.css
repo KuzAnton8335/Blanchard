@@ -216,6 +216,7 @@
   }
 
   .header-exit {
+    display: block;
     padding-left: 0;
   }
   @keyframes navLinksFade {
