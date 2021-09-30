@@ -1,0 +1,35 @@
+/* about as */
+.about-as__text {
+	max-width: 1080px;
+	margin: 0 auto;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.about-as__title {
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 65px;
+	color: var(--black-font);
+	padding-bottom: 30px;
+}
+
+.about-as__discr {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 32px;
+	color: var(--black-font);
+}
+/* /about-as */
+
+/* gallery */
+.gallery {
+	background-image: url("../img/bg-gallery.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: var(--white-color);
+}
+.gallery-container {
+	max-width: 1680px;
+	margin: 0 auto;
+}
