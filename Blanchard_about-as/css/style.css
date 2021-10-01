@@ -32,4 +32,132 @@
 .gallery-container {
 	max-width: 1680px;
 	margin: 0 auto;
+	display: flex;
+}
+
+.gallery-left {
+	max-width: 400px;
+	margin-right: 50px;
+}
+
+.gallery-title {
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 65px;
+	margin-top: 80px;
+	margin-bottom: 30px;
+}
+
+.gallery-filtr {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 32px;
+}
+
+.custom-select {
+	position: relative;
+	font-family: "Open sans", sans-serif;
+}
+
+.custom-select select {
+	display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+	max-width: 400px;
+	min-height: 35px;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+	position: absolute;
+	content: url("../img/select-icon.svg");
+	top: 15px;
+	right: 20px;
+	width: 0;
+	height: 0;
+	/* border: 6px solid transparent;
+	 border-color: #fff transparent transparent transparent; */
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+	display: none;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+	width: 385px;
+	height: 35px;
+	color: #fff;
+	padding-top: 13px;
+	padding-bottom: 0;
+	border-radius: 6px;
+	padding-left: 15px;
+	cursor: pointer;
+	user-select: none;
+	background-color: inherit;
+	border: 1px solid #ffffff;
+}
+
+/*style items (options):*/
+.select-items {
+	position: absolute;
+	background-color: inherit;
+	top: 93%;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	width: 400px;
+	border-radius: 6px;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+	display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+	width: 385px;
+	height: 35px;
+	color: #999;
+	border-color: #999;
+}
+
+.gallery-descr {
+	margin-top: 554px;
+	min-height: 118px;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 32px;
+}
+
+.gallery-descr a {
+	color: var(--focus-color);
+}
+
+.gallery-right {
+	max-width: 1150px;
+	min-height: 810px;
+}
+.gallery-buttons {
+	margin-top: 97px;
+}
+
+.gallery-block {
+	max-width: 1150px;
+	min-height: 750px;
+	margin-top: 30px;
+	display: grid;
+	grid-template-rows: 350px 350px 350px;
+	grid-template-columns: 350px 350px 350px;
+	grid-gap: 50px;
+}
+
+.gallery-btn {
+	background-color: inherit;
+	border: none;
+	cursor: pointer;
 }

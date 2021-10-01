@@ -30,6 +30,7 @@
       media="print"
       onload="this.media='all'"
     />
+    <script src="js/script.js" defer></script>
     <title>About-as</title>
   </head>
   <body>
@@ -59,12 +60,14 @@
       <div class="gallery-container">
         <div class="gallery-left">
           <h2 class="gallery-title">Галерея</h2>
-          <span class="gallery-filtr">Фильтр:</span>
-          <select name="select" class="gallery-select">
-            <option>Живопись</option>
-            <option>Рисунок</option>
-            <option>Скульптура</option>
-          </select>
+          <p class="gallery-filtr">Фильтр:</p>
+          <div class="custom-select" style="width: 400px">
+            <select name="select">
+              <option value="1">Живопись</option>
+              <option value="2">Рисунок</option>
+              <option value="3">Скульптура</option>
+            </select>
+          </div>
 
           <p class="gallery-descr">
             Вам предоставляется 10 бесплатных скачиваний. Для увеличения
