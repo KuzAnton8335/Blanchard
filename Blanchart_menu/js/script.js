@@ -21,3 +21,26 @@ let navSlide = () => {
 	});
 };
 navSlide();
+
+// modal window
+
+const modalBtn = document.querySelector('.header-exit__link');
+const modal = document.querySelector('.popup-window');
+const closeBtn = document.querySelector('.close-btn__window');
+
+modalBtn.addEventListener('click', () => {
+	modal.classList.remove('hidden');
+})
+
+//modal__close
+modal.addEventListener('click', (event) => {
+	const target = event.target;
+
+	if (target.classList.contains('overlay') || target.classList.contains('close-btn__window')) {
+		modal.classList.add('hidden');
+	}
+})
+
+closeBtn.onclick = function () {
+	modal.classList.add('hidden')
+}
