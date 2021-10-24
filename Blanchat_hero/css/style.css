@@ -2,7 +2,7 @@
 .nav-sub__menu {
   display: block;
   min-height: 70px;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .nav-sub__drop {
@@ -25,27 +25,33 @@
 .dropdown {
   position: relative;
   display: inline-block;
+  padding-top: 23px;
+  padding-bottom: 28px;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   width: 300px;
-  height: 470px;
+  height: 300px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  margin-top: 29px;
+  margin-top: 28px;
 }
 
 /* Links inside the dropdown */
+
+.dropdown-content a:nth-child(1) {
+  margin-top: 40px;
+}
 .dropdown-content a {
   color: var(--white-color);
   max-width: 220px;
   min-height: 40px;
   display: block;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-left: 40px;
   position: relative;
 }
@@ -75,7 +81,7 @@
 }
 
 .simplebar-scrollbar {
-  background-color: #000;
+  background-color: var(--black-color);
 }
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
