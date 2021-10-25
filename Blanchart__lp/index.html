@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -21,9 +21,160 @@
       src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"
       defer
     ></script>
-    <title>Hero</title>
+    <script src="js/script.js" defer></script>
+    <title>Blanchart</title>
   </head>
   <body>
+    <!-- header -->
+    <header class="header">
+      <div class="header-container">
+        <a href="#index.html" class="header-logo__link">
+          <picture class="header-logo">
+            <source srcset="img/logo-phone.svg" media="(max-width: 320px)" />
+            <source srcset="img/logo-smart.svg" media="(max-width: 768px)" />
+            <source srcset="img/logo-tab.svg" media="(max-width: 1024px)" />
+            <source srcset="img/header-logo.svg" />
+            <img
+              src="img/header-logo.svg"
+              alt="Blanchard художественная галерея"
+            />
+          </picture>
+        </a>
+        <nav class="header-nav">
+          <ul class="header-nav__list" id="menu">
+            <li class="nav-item">
+              <a href="#" class="nav-item__link">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-item__link">Галерея</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-item__link">Каталог</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-item__link">События</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-item__link">Издания</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-item__link">Проекты</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-item__link">Контакты</a>
+            </li>
+            <li class="nav-item header-exit">
+              <a href="#" class="header-exit__link">
+                <svg
+                  width="13"
+                  height="13"
+                  viewBox="0 0 13 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="exit-svg"
+                >
+                  <path
+                    d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
+                    fill="white"
+                  />
+                </svg>
+                Войти
+              </a>
+            </li>
+          </ul>
+          <button href="#" class="burger-menu" id="burger">
+            <div class="burger-line__1"></div>
+            <div class="burger-line__2"></div>
+            <div class="burger-line__3"></div>
+          </button>
+        </nav>
+
+        <div class="header-search">
+          <input
+            class="search-txt"
+            type="text"
+            name=""
+            placeholder="Поиск по сайту"
+          />
+          <a href="#" class="search-btn">
+            <svg
+              width="30"
+              height="29"
+              viewBox="0 0 30 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="mb-search__icon"
+            >
+              <rect
+                width="9.15446"
+                height="2.28862"
+                transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58154 21.0461)"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- popup -->
+        <div class="popup-window hidden">
+          <div class="overlay"></div>
+          <div class="popup-content">
+            <div class="popup-line">
+              <center><h2 class="popup-title">Регистрация</h2></center>
+              <button
+                class="close-btn__window"
+                type="button"
+                aria-label="закрыть модальное окно"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="#fff"
+                >
+                  <path
+                    d="M4.293,18.293,10.586,12,4.293,5.707A1,1,0,0,1,5.707,4.293L12,10.586l6.293-6.293a1,1,0,1,1,1.414,1.414L13.414,12l6.293,6.293a1,1,0,1,1-1.414,1.414L12,13.414,5.707,19.707a1,1,0,0,1-1.414-1.414Z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="inputBlock">
+              <input type="text" id="nick" size="30" required />
+              <label for="nick">Имя пользователя</label>
+            </div>
+            <div class="inputBlock">
+              <input type="text" id="mail" size="30" required />
+              <label for="mail">Почта пользователя</label>
+            </div>
+            <div class="inputBlock">
+              <input type="password" id="pssw" size="30" required />
+              <label for="pssw">Пароль</label>
+            </div>
+            <br />
+            <input type="checkbox" id="check" />
+            <label for="check">Пользовательское соглашение </label>
+            <center>
+              <div id="socialBlock">
+                <i class="fa fa-vk"></i>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-google-plus"></i>
+                <i class="fa fa-twitter"></i>
+              </div>
+            </center>
+
+            <button class="btn-registration">Зарегистрироватся</button>
+          </div>
+        </div>
+        <!-- /popup -->
+      </div>
+    </header>
+    <!-- /header -->
+    <!-- sub-menu -->
     <main class="main">
       <!-- sub-menu -->
       <section class="hero">
@@ -277,6 +428,6 @@
       </section>
       <!-- /sub-menu -->
     </main>
-    <script src="js/script.js"></script>
+    <!-- /sub-menu -->
   </body>
 </html>

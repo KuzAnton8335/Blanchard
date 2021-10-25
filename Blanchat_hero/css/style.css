@@ -123,14 +123,15 @@
   color: #7943a4;
   cursor: pointer;
 }
-.dropbtn:active .down-svg__menu path {
+.dropbtn:active .down-svg__menu path stroke {
   fill: #9d5cd0;
 }
 
-.dropbtn:focus .down-svg__menu path {
+.dropbtn:focus .down-svg__menu path stroke {
   fill: #7943a4;
   transform: rotate(180deg);
 }
+
 .nav-sub__search {
   margin-left: 329px;
 }
