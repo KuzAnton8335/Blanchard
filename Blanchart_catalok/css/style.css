@@ -1,5 +1,6 @@
 .catalok-up {
   margin-top: 80px;
+  margin-bottom: 30px;
   display: flex;
   align-items: center;
 }
@@ -22,10 +23,47 @@
 }
 
 .catalok-text {
-  margin-top: 30px;
   max-width: 1080px;
   font-weight: normal;
   font-size: 16px;
   line-height: 32px;
   color: var(--black-fonts);
 }
+
+.catalok-block {
+  display: flex;
+}
+
+.catalok-left {
+  margin-right: 50px;
+}
+.catalok-picture {
+  margin-top: 50px;
+}
+
+.catalok-left__title {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: var(--black-fonts);
+}
+
+.catalok-left__small {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #999999;
+  padding-bottom: 20px;
+}
+
+.catalok-text__left {
+  max-width: 749px;
+}
+.catalok-right {
+  margin-top: 50px;
+}
+/* accordion */
+
+/* /accordion */ ;
