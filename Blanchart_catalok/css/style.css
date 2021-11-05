@@ -61,9 +61,103 @@
 .catalok-text__left {
   max-width: 749px;
 }
-.catalok-right {
-  margin-top: 50px;
-}
-/* accordion */
 
+/* accordion */
+/* Устанавливает ширину accordion. Устанавливает поле 90 пикселей сверху и снизу и автоматически слева и справа.*/
+
+.accordion {
+  width: 800px;
+  margin: 0 auto;
+  color: black;
+  background-color: white;
+  padding: 45px 45px;
+}
+
+.accordion .container {
+  position: relative;
+  margin: 10px 10px;
+}
+
+/* Позиционирует метки относительно контейнера. Добавляет отступы сверху и снизу и увеличивает размер шрифта. Также делает курсор указателем*/
+
+.accordion .label {
+  position: relative;
+  padding: 28px 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--black-font);
+  cursor: pointer;
+}
+
+/* Помещает знак плюса на 5 пикселей справа. Центрирует его, используя свойство transform. */
+
+/* .accordion .label::before {
+  content: url("../img/catalok-icons/close svg.svg");
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  transform: translateY(-50%);
+} */
+
+.label {
+  position: relative;
+}
+.svg-accordion {
+  position: absolute;
+  top: 20px;
+  left: 720px;
+  right: 0;
+  width: 50px;
+  height: 50px;
+}
+
+.svg-accordion .st0:hover {
+  fill: #d1a9f0;
+}
+
+.label h3 {
+  max-width: 215px;
+  color: var(--black-fonts);
+  font-size: 24px;
+  line-height: 32px;
+}
+.label h3:hover {
+  background-color: var(--hover-color);
+  color: var(--white-color);
+}
+
+/* Скрывает содержимое (  height: 0), уменьшает размер шрифта, выравнивает текст и добавляет переход */
+
+.accordion .content {
+  position: relative;
+  background: white;
+  height: 0;
+  font-size: 20px;
+  text-align: justify;
+  width: 780px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+/* Добавляет горизонтальную линию между содержимым */
+
+.accordion hr {
+  width: 100%;
+  margin-left: 0;
+  border: 1px solid #cacaca;
+}
+
+/* Отображает часть содержимого, когда она активна. Устанавливает высоту */
+
+.accordion .container.active .content {
+  height: 150px;
+}
+
+/* При активации меняется со знака плюса на минус */
+
+/* .accordion .container.active .label::before {
+  content: url("../img/catalok-icons/open.png");
+  font-size: 24px;
+} */
 /* /accordion */ ;
