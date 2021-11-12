@@ -1,163 +1,235 @@
-.catalok-up {
-  margin-top: 80px;
-  margin-bottom: 30px;
-  display: flex;
-  align-items: center;
+body {
+	margin: 0;
+	font-family: "Open Sans", sans-serif;
+	min-height: 100vh;
+}
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.container {
+	max-width: 1600px;
+	margin: 0 auto;
+}
+.tab-content {
+	display: none;
+}
+.tab-active {
+	display: flex;
+}
+.arrow {
+	width: 11px;
+	height: 11px;
+	border-top: 2px solid #000;
+	border-right: 2px solid #000;
+	margin-left: 12px;
+	transform: rotate(135deg);
+}
+.ac--list {
+	width: 100%;
+	max-width: 800px;
+}
+.ac--list__item {
+	cursor: pointer;
+}
+.ac--list__item-top {
+	display: flex;
+	justify-content: space-between;
+
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	margin-top: -1px;
 }
 
-.catalok-title {
-  font-weight: normal;
-  font-size: 48px;
-  line-height: 65px;
-  padding-right: 39px;
-  color: var(--black-fonts);
+.ac--list__title {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 32px;
+	color: var(--black-fonts);
+}
+.ac-list__item-btn {
+	cursor: pointer;
+	border-radius: 100%;
+	max-width: 50px;
+	width: 100%;
+	height: 50px;
+	background-color: transparent;
+	border: 1px solid grey;
+
+	font-size: 40px;
+	transition-property: transform;
+	transition: 0.2s ease-in-out;
 }
 
-.catalok-icons__list {
-  display: flex;
-  align-items: center;
+.ac--list__item:active .ac-list__item-btn {
+	transform: rotate(45deg);
 }
 
-.catalok-item {
-  padding-right: 50px;
+.ac--list__item-top:hover,
+.ac--list__item-top:focus-visible {
+	border-color: var(--hover-color);
+	position: relative;
+	z-index: 1;
+}
+.ac--list__item-top:hover .ac-list__item-btn,
+.ac--list__item-top:focus-visible .ac-list__item-btn {
+	background-color: #d1a9f0;
+	border-color: #9d5cd0;
+	color: #000;
 }
 
-.catalok-text {
-  max-width: 1080px;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 32px;
-  color: var(--black-fonts);
+.ac--list__item-top:focus-visible {
+	outline: 0;
 }
 
-.catalok-block {
-  display: flex;
+.ac--list__item-top.ui-state-active {
+	border-bottom: 0;
+	border-color: var(--hover-color);
+}
+.ac--list__item-top.ui-state-active .ac-list__item-btn {
+	transform: rotate(180deg);
+	background-color: #d1a9f0;
+	border-color: #9d5cd0;
+	color: #000;
+}
+.ac--list__item-top.ui-state-active h3 {
+	color: var(--hover-color);
 }
 
-.catalok-left {
-  margin-right: 50px;
+.ac--list__item-top:hover h3,
+.ac--list__item-top:focus-visible h3 {
+	background-color: var(--hover-color);
+	color: var(--white-color);
 }
-.catalok-picture {
-  margin-top: 50px;
-}
-
-.catalok-left__title {
-  margin-top: 30px;
-  margin-bottom: 15px;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 33px;
-  color: var(--black-fonts);
+.ac--list__item-top.ui-state-active + .ac--list__iten-bottom {
+	border-bottom: 1px solid var(--hover-color);
+	position: relative;
+	z-index: 2;
 }
 
-.catalok-left__small {
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
-  color: #999999;
-  padding-bottom: 20px;
+.ac--list__iten-bottom {
+	padding-bottom: 20px;
+	line-height: 2;
 }
 
-.catalok-text__left {
-  max-width: 749px;
+.article-content__img {
+	width: 100%;
+}
+.article-content {
+	max-width: 750px;
+	flex: 1;
+	margin-right: 50px;
+	display: none;
 }
 
-/* accordion */
-/* Устанавливает ширину accordion. Устанавливает поле 90 пикселей сверху и снизу и автоматически слева и справа.*/
-
-.accordion {
-  width: 800px;
-  margin: 0 auto;
-  color: black;
-  background-color: white;
-  padding: 45px 45px;
+.article-content.article-tabActive {
+	display: block;
+}
+.article-title {
+	margin-top: 30px;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 33px;
+	color: var(--black-fonts);
 }
 
-.accordion .container {
-  position: relative;
-  margin: 10px 10px;
+.article-mini__text {
+	display: inline-block;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 16px;
+	color: #999;
 }
 
-/* Позиционирует метки относительно контейнера. Добавляет отступы сверху и снизу и увеличивает размер шрифта. Также делает курсор указателем*/
+.article-text {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 32px;
+	color: var(--black-fonts);
+}
+.article-link {
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22px;
+}
+.ac--list__iten-tab {
+	background-color: transparent;
+	border: 1px solid grey;
 
-.accordion .label {
-  position: relative;
-  padding: 28px 0;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  color: var(--black-font);
-  cursor: pointer;
+	cursor: pointer;
+}
+.heading {
+	display: flex;
+}
+.heading-title {
+	margin-top: 30px;
+	margin-right: 40px;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 2px;
+	color: var(--black-fonts);
 }
 
-/* Помещает знак плюса на 5 пикселей справа. Центрирует его, используя свойство transform. */
-
-/* .accordion .label::before {
-  content: url("../img/catalok-icons/close svg.svg");
-  position: absolute;
-  top: 50%;
-  right: -5px;
-  transform: translateY(-50%);
-} */
-
-.label {
-  position: relative;
-}
-.svg-accordion {
-  position: absolute;
-  top: 20px;
-  left: 720px;
-  right: 0;
-  width: 50px;
-  height: 50px;
+.heading-descr {
+	max-width: 1080px;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 32px;
+	color: var(--black-fonts);
+	margin-top: 30px;
+	margin-bottom: 50px;
 }
 
-.svg-accordion .st0:hover {
-  fill: #d1a9f0;
+.heading-ul {
+	display: flex;
+	align-items: center;
+}
+.heading-item:not(:last-child) {
+	margin-right: 30px;
+}
+.heading-item--btn {
+	background-color: transparent;
+	border: none;
+	padding: 8px;
+	transition-property: background-color, color, opacity;
+	transition: 0.2s ease-in-out;
+	cursor: pointer;
+}
+.heading-item--btn:focus-visible,
+.heading-item--btn:hover {
+	box-shadow: 0px 0px 10px rgba(157, 92, 208, 0.7);
+	padding: 0;
+	border-radius: 30px;
+	color: #fff;
+	outline: 0;
+}
+.heading-item--btn:active {
+	border: 2px solid #7943a4;
+	border-radius: 23px;
+}
+.empty {
+	height: 200px;
+	background-color: grey;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.label h3 {
-  max-width: 215px;
-  color: var(--black-fonts);
-  font-size: 24px;
-  line-height: 32px;
-}
-.label h3:hover {
-  background-color: var(--hover-color);
-  color: var(--white-color);
+.btn-active {
+	border: 2px solid #7943a4;
+	border-radius: 100%;
 }
 
-/* Скрывает содержимое (  height: 0), уменьшает размер шрифта, выравнивает текст и добавляет переход */
-
-.accordion .content {
-  position: relative;
-  background: white;
-  height: 0;
-  font-size: 20px;
-  text-align: justify;
-  width: 780px;
-  overflow: hidden;
-  transition: 0.5s;
+.article-btn-active {
+	background-color: #333;
+	color: #fff;
 }
-
-/* Добавляет горизонтальную линию между содержимым */
-
-.accordion hr {
-  width: 100%;
-  margin-left: 0;
-  border: 1px solid #cacaca;
-}
-
-/* Отображает часть содержимого, когда она активна. Устанавливает высоту */
-
-.accordion .container.active .content {
-  height: 150px;
-}
-
-/* При активации меняется со знака плюса на минус */
-
-/* .accordion .container.active .label::before {
-  content: url("../img/catalok-icons/open.png");
-  font-size: 24px;
-} */
-/* /accordion */ ;
