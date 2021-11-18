@@ -14,11 +14,19 @@
       rel="stylesheet"
       href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/normalaiz.css" />
     <link rel="stylesheet" href="css/cost.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script
       src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"
+      defer
+    ></script>
+    <script
+      src="https://unpkg.com/swiper@7/swiper-bundle.min.js"
       defer
     ></script>
     <script src="js/script.js" defer></script>
@@ -177,7 +185,7 @@
     <!-- sub-menu -->
     <main class="main">
       <!-- sub-menu -->
-      <section class="hero">
+      <div class="hero">
         <div class="nav-sub__menu">
           <div class="container">
             <div class="nav-sub__drop">
@@ -380,8 +388,75 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
       <!-- /sub-menu -->
+      <!-- slider -->
+      <div class="swiper">
+        <div class="slider-discr">
+          <h1 class="slider-title">Прикоснитесь к прекрасному</h1>
+          <p class="slider-subdiscr">
+            Мы вынуждены отталкиваться от того, что реализация намеченных
+            плановых заданий создаёт предпосылки для новых предложений.
+          </p>
+          <a href="#" class="slide-link">Подписаться на рассылку</a>
+        </div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="img/images-slider/TB-imgbg-1.jpg"
+                media="(max-width: 768px)"
+              />
+              <source
+                srcset="img/images-slider/PL-imgbg-1.jpg"
+                media="(max-width: 1024px)"
+              />
+              <source
+                srcset="img/images-slider/SM-imgbg-1.jpg"
+                media="(max-width: 320px)"
+              />
+              <img src="img/images-slider/DS-imgbg-1.jpg" alt="slide1" />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="img/images-slider/TB-imgbg-2.jpg"
+                media="(max-width: 768px)"
+              />
+              <source
+                srcset="img/images-slider/PL-imgbg-2.jpg"
+                media="(max-width: 1024px)"
+              />
+              <source
+                srcset="img/images-slider/SM-imgbg-2.jpg"
+                media="(max-width: 320px)"
+              />
+              <img src="img/images-slider/DS-imgbg-2.jpg" alt="slide1" />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="img/images-slider/TB-imgbg-3.jpg"
+                media="(max-width: 768px)"
+              />
+              <source
+                srcset="img/images-slider/PL-imgbg-3.jpg"
+                media="(max-width: 1024px)"
+              />
+              <source
+                srcset="img/images-slider/SM-imgbg-3.jpg"
+                media="(max-width: 320px)"
+              />
+              <img src="img/images-slider/DS-imgbg-3.jpg" alt="slide1" />
+            </picture>
+          </div>
+        </div>
+      </div>
+      <!-- /slider -->
     </main>
     <!-- /sub-menu -->
   </body>

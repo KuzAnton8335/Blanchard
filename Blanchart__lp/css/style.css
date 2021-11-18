@@ -779,3 +779,54 @@ label[for="check"] {
   }
 }
 /* /reponsive -styles */
+
+/* slider */
+.swiper {
+  max-width: 1920px;
+  min-height: 800px;
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.slider-discr {
+  position: absolute;
+  top: 120px;
+  left: 160px;
+  z-index: 4;
+}
+
+.slider-title {
+  max-width: 580px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 98px;
+  color: var(--white-color);
+  padding-top: 93px;
+}
+
+.slider-subdiscr {
+  max-width: 579px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--white-color);
+}
+
+.slide-link {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--white-color);
+  display: inline-block;
+  margin-top: 92px;
+  padding: 22px 35px;
+  background: var(--hover-color);
+  border-radius: 100px;
+}
+
+/* /slider */
