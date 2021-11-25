@@ -344,8 +344,12 @@ label[for="check"] {
 
 .nav-sub__drop {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+.nav-sub__search {
+  margin-top: 15px;
+  margin-left: 226px;
 }
 .dropbtn {
   background-color: inherit;
@@ -369,8 +373,16 @@ label[for="check"] {
   display: inline-block;
   padding-top: 15px;
   padding-bottom: 5px;
+  margin-right: 77px;
 }
 
+.dropdown:nth-child(3) {
+  margin-right: 81px;
+}
+
+.dropdown:nth-child(4) {
+  margin-right: 81px;
+}
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
@@ -739,6 +751,7 @@ label[for="check"] {
 .slider {
   margin: 0 auto;
   width: 100%;
+  height: 630px;
   overflow: hidden;
 }
 
@@ -777,7 +790,7 @@ img {
 
 .slider-discr {
   position: absolute;
-  top: 300px;
+  top: 235px;
   left: 160px;
   z-index: 1;
 }
@@ -786,10 +799,11 @@ img {
   max-width: 597px;
   font-weight: bold;
   font-size: 72px;
-  line-height: 98px;
+  line-height: 89px;
   color: var(--white-color);
 }
 .slider-text {
+  margin-top: 14px;
   max-width: 579px;
   font-weight: bold;
   font-size: 18px;
