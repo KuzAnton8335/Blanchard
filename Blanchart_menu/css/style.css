@@ -332,10 +332,9 @@ label[for="check"] {
 /* header */
 
 /* sub-menu */
-.sub-menu {
+.header.sub-menu {
   min-height: 70px;
-  background-color: var(--black-color);
-  opacity: 0.6;
+  background: rgba(0, 0, 0, 0.4);
 }
 .sub-menu__container {
   max-width: 1600px;
