@@ -155,7 +155,7 @@
 }
 /* popup-window */
 .popup-window {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -335,6 +335,9 @@ label[for="check"] {
 
 /* sub-menu */
 .sub-menu {
+  position: absolute;
+  display: block;
+  width: 100%;
   min-height: 70px;
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -804,7 +807,7 @@ img {
     z-index: 1;
   }
 
-  .slider {
+  .slides img {
     width: 1024px;
     height: 768px;
   }
@@ -837,6 +840,11 @@ img {
     left: 0;
     width: 100%;
     z-index: 1;
+  }
+
+  .slides img {
+    width: 768px;
+    height: 768px;
   }
 }
 
@@ -880,6 +888,11 @@ img {
   .header-search:hover > .search-txt {
     width: 100px;
     padding: 0 6px;
+  }
+
+  .slides img {
+    width: 320px;
+    height: 355px;
   }
 }
 /*  /reponsive header */
